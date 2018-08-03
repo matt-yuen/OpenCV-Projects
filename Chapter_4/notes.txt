@@ -1,0 +1,10 @@
+----- Notes -----
+pixels
+	grayscale - 0 to 255 (black to white)
+	colour - represented in RGB, usually use 8-bit unsigned integer to represent each colour intensity
+
+images are represented as grids of pixels - top left corner is (0, 0)
+
+image[*x*, *y*] - returns array of RGB components of that pixel ([b, g, r]), OpenCV stores RBG in reverse order (BGR)
+
+image[*start_row*:*end_row*, *start_col*:*end_col*] - array slicing
