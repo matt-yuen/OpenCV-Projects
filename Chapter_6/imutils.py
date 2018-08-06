@@ -6,3 +6,14 @@ def translate(image, x, y):
 	shifted = cv2.warpAffine(image, M, (image.shape[1], image.shape[0]))
 
 	return shifted
+
+def rotate(image, theta, center = None, scale = 1.0):
+	(h, w) = image.shape[:2]
+
+	if center is None:
+		center = (w // 2, h // 2)
+
+	M = cv2.getRotationMatrix2D(center, theta, scale)
+	rotated = cv2.warpAffine(image, M, (w, h))
+
+	return rotated
