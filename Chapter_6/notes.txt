@@ -8,3 +8,7 @@ Translation:
 Rotation:
 	
 	cv2.getRotationMatrix2D(rotation_point, theta, scale)
+
+Resizing:
+
+	cv2.resize(img, new_dimensions, interp_method) - generally cv2.INTER_AREA for interpolation method obtains the best results, other methods include INTER_LINEAR, INTER_CUBIC, INTER_NEAREST
