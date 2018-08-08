@@ -18,3 +18,13 @@ Flipping:
 	can flip around x or y axis
 
 	cv2.flip(img, flip_code) - flip_code values: 1 (around y-axis), 0 (x-axis), negative (both axes)
+
+Cropping:
+
+	Array slicing - refer to ../Chapter_4/notes.txt
+
+Arithmetic:
+
+	cv2.add(np, np) - OpenCV performs clipping (pixels must be within [0, 255])
+
+	np +/- np - NumPy performs modulo ("wrap around")
