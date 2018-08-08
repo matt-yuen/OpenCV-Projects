@@ -3,7 +3,7 @@ Translation:
 
 	M - defined as floating point array (OpenCV expects this to be of floating point type), first row [1, 0, t_x] and second row [0, 1, t_y] where t_x and t_y are the number of pixels we want to shift
 
-	warpAffine(img, trans_matrix, (width, height)) - transforms image
+	cv2.warpAffine(img, trans_matrix, (width, height)) - transforms image
 
 Rotation:
 	
@@ -12,3 +12,9 @@ Rotation:
 Resizing:
 
 	cv2.resize(img, new_dimensions, interp_method) - generally cv2.INTER_AREA for interpolation method obtains the best results, other methods include INTER_LINEAR, INTER_CUBIC, INTER_NEAREST
+
+Flipping:
+
+	can flip around x or y axis
+
+	cv2.flip(img, flip_code) - flip_code values: 1 (around y-axis), 0 (x-axis), negative (both axes)
