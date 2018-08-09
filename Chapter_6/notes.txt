@@ -30,10 +30,22 @@ Arithmetic:
 
 Bitwise Operations:
 
-	AND
+	pixels are turned "off" (value = 0) or "on" (value > 0)
 
-	OR
+	cv2.bitwise_and(img, img)
 
-	XOR
+	cv2.bitwise_or(img, img)
 
-	NOT
+	cv2.bitwise_xor(img, img)
+
+	cv2.bitwise_not(img)
+
+Masking:
+
+	cv2.bitwise_and(img, img, mask = *mask*)
+
+Channels:
+
+	cv2.split(img) - returns 3 images (numpy arrays) of each channel individually
+
+	cv2.merge([blue_img, green_img, red_img]) - merges the 3 channels together into 1 image
