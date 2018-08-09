@@ -3,6 +3,7 @@ import cv2
 import argparse
 import numpy as np
 
+# Loading image
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required = True, help = "Path to the image")
 args = vars(ap.parse_args())
@@ -14,10 +15,12 @@ first = np.uint8([50])
 second = np.uint8([100])
 third = np.uint8([200])
 
+# Showcasing OpenCV's clipping arithmetic
 print("----- OpenCV Arithmetic -----")
 print("max of 255: {}".format(cv2.add(second, third)))
 print("min of 0: {}".format(cv2.subtract(first, second)))
 
+# Showcasing NumPy's wrapping arithmetic
 print("----- NumPy Arithmetic -----")
 print("wrap around: {}".format(second + third))
 print("wrap around: {}".format(first - second))
