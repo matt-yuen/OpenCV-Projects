@@ -1,7 +1,10 @@
------ Notes -----
-pixels
+Pixels:
+
 	grayscale - 0 to 255 (black to white)
+
 	colour - represented in RGB, usually use 8-bit unsigned integer to represent each colour intensity
+
+Images:
 
 images are represented as grids of pixels - top left corner is (0, 0)
 

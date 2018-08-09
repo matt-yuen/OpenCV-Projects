@@ -1,17 +1,20 @@
------ CODE -----
-print() - works with both Python 2.7 and 3 (instead of print statement)
+OpenCV image functions:
 
-argparse - used to parse command line arguments (in this case the only argument we need is "--image", the path to the image)
+	cv2.imread(*path to file*) - returns a NumPy array representing the image
 
-cv2.imread(*path to file*) - returns a NumPy array representing the image
+	cv2.imshow(*window name*, *image*) - displays image on screen
 
-cv2.imshow(*window name*, *image*) - displays image on screen
+	cv2.waitKey(*keys*) - pauses execution of script until key is pressed, parameter of 0 indicates that any keypress will unpause
 
-cv2.waitKey(*keys*) - pauses execution of script until key is pressed, parameter of 0 indicates that any keypress will unpause
+	cv2.imwrite(*path to file*, *image*) - saving image in any format, handled by OpenCV
 
-cv2.imwrite(*path to file*, *image*) - saving image in any format, handled by OpenCV
+Notes:
 
------ Notes -----
-channels - output is 3 because RGB components
+	print() - works with both Python 2.7 and 3 (instead of print statement)
 
-image NumPy shape is (600 pixels, 900 pixels, 3) - it is common to define matrics as rows * columns
+	argparse - used to parse command line arguments (in this case the only argument we need is "--image", the path to the image)
+
+
+	channels - output is 3 because RGB components
+
+	image NumPy shape is (600 pixels, 900 pixels, 3) - it is common to define matrics as rows * columns

@@ -1,4 +1,3 @@
------ Code -----
 Translation:
 
 	M - defined as floating point array (OpenCV expects this to be of floating point type), first row [1, 0, t_x] and second row [0, 1, t_y] where t_x and t_y are the number of pixels we want to shift
@@ -28,3 +27,13 @@ Arithmetic:
 	cv2.add(np, np) - OpenCV performs clipping (pixels must be within [0, 255])
 
 	np +/- np - NumPy performs modulo ("wrap around")
+
+Bitwise Operations:
+
+	AND
+
+	OR
+
+	XOR
+
+	NOT

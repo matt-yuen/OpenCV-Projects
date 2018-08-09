@@ -1,21 +1,25 @@
------ Code -----
-import numpy as np - creates an alias for numpy as np
+Numpy:
 
-np.zeros((*rows*, *cols*, *channels*), *data type*) - creates numpy array with zeroes, second argument is 8-bit unsigned integer (uint8) because we are representing our image as an RGB image with pixels in the range [0, 255]
+	import numpy as np - creates an alias for numpy as np
 
-cv2.line(*image*, *start point*, *end point*, *BGR colour*, *thickness*) - draws a line, thickness is an optional argument
+	np.zeros((*rows*, *cols*, *channels*), *data type*) - creates numpy array with zeroes, second argument is 8-bit unsigned integer (uint8) because we are representing our image as an RGB image with pixels in the range [0, 255]
 
-cv2.rectangle(*image*, *upper left point*, *bottom right point*, *BGR colour*, *thickness*) - draws a rectangle, providing a negative value for the thickness means filling in the rectangle
+	np.random.randint(*smallest value*, high = *largest value*, size = (*num of integers*,)) - generates random number(s)
 
-cv2.circle(*image*, *center point*, *radius*, *BGR colour*, *thickness*) - draws a circle
+Drawing in OpenCV:
 
-np.random.randint(*smallest value*, high = *largest value*, size = (*num of integers*,)) - generates random number(s)
+	cv2.line(*image*, *start point*, *end point*, *BGR colour*, *thickness*) - draws a line, thickness is an optional argument
 
-tuple(*array*) - creates a tuple
+	cv2.rectangle(*image*, *upper left point*, *bottom right point*, *BGR colour*, *thickness*) - draws a rectangle, providing a negative value for the thickness means filling in the rectangle
 
------ Notes -----
-// - integer division
+	cv2.circle(*image*, *center point*, *radius*, *BGR colour*, *thickness*) - draws a circle
 
-/ - floating point division
+Notes:
 
-for *var* in range (*start*, *end*, *increment*) - the range function is exclusive, stops at end - 1
+	tuple(*array*) - creates a tuple
+
+	// - integer division
+
+	/ - floating point division
+
+	for *var* in range (*start*, *end*, *increment*) - the range function is exclusive, stops at end - 1
