@@ -2,6 +2,8 @@ Histograms:
 
 	cv2.calcHist([img], [channels], mask, [histSize], [ranges]) - channels can be grayscale [0] or RGB [0, 1, 2] for example, if no mask provide None, histSize is a list of the number of bins for each channel
 
+	cv2.equalizeHist(img) - improves contrast of image, image must be grayscale as equalizing can only be performed on grayscale images
+
 Matplotlib:
 
 	plt.figure()
