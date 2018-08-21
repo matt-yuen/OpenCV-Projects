@@ -6,8 +6,8 @@ Pixels:
 
 Images:
 
-images are represented as grids of pixels - top left corner is (0, 0)
+	images are represented as grids of pixels - top left corner is (0, 0)
 
-image[*x*, *y*] - returns array of RGB components of that pixel ([b, g, r]), OpenCV stores RBG in reverse order (BGR)
+	image[*x*, *y*] - returns array of RGB components of that pixel ([b, g, r]), OpenCV stores RBG in reverse order (BGR)
 
-image[*start_row*:*end_row*, *start_col*:*end_col*] - array slicing
+	image[*start_row*:*end_row*, *start_col*:*end_col*] - array slicing

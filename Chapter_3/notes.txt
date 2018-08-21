@@ -14,7 +14,6 @@ Notes:
 
 	argparse - used to parse command line arguments (in this case the only argument we need is "--image", the path to the image)
 
-
 	channels - output is 3 because RGB components
 
 	image NumPy shape is (600 pixels, 900 pixels, 3) - it is common to define matrics as rows * columns
