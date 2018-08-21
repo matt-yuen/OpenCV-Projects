@@ -1,5 +1,4 @@
 import numpy as np
-import argparse
 import cv2
 
 # Loading image and convert to grayscale
