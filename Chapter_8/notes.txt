@@ -1,0 +1,33 @@
+Averaging:
+	
+	cv2.blur(img, (k, k))
+
+	k by k (k = odd) sliding window (convolutional kernel or kernel) is used, pixel at center is set to the average of all pixels within the window
+
+	as the size of the kernel increases, the more blurred the image becomes
+
+Gaussian:
+
+	cv2.GaussianBlur(img, (k, k), std_dev_x) - if std_dev_x is 0, OpenCV computes them based on kernel size
+
+	uses weighted average, pixels closer to the central pixel "weigh" more with respect to the average
+
+	creates a more natural blur
+
+Median:
+
+	cv2.medianBlur(img, k)
+
+	central pixel in kernel replaced with median
+
+	best for removing salt and pepper noise because each replaced central pixel is replaced with a pixel intensity that exists in the image
+
+Bilateral:
+
+	cv2.bilateralFilter(img, diameter, color, space)
+
+	used to reduce noise but maintain edges
+
+Other:
+
+	np.hstack([img, img2, img3, ...]) - stacks images horizontally, must be of same size?
