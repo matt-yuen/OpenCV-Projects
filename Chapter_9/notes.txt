@@ -1,11 +1,19 @@
 Thresholding:
 
+	thresholding is the binariation of an image where pixels are either 0 or 255
+
+	threshold value must be specified so that all pixel intensities less than this are set to 0 and greater than this are set to 255
+
+Simple Thresholding:
+
 	cv2.threshold(img, threshold_value, max_value, threshold_method) - image must be passed in as grayscale, any value greater than threshold_value will be set to max_value, methods: cv2.THRESH_BINARY, cv2.THRESH_BINARY_INV, returns a tuple (threshold_value, thresholded_img)
+
+Adaptive Thresholding:
 
 	cv2.adaptiveThreshold(img, max_value, compute_method, threshold_method, k, C) - methods: cv2.ADAPTIVE_THRESH_MEAN_C computes the mean of neighbourhood pixels and uses that as threshold value, cv2.ADAPTIVE_THRESH_GAUSSIAN_C uses weighted mean, k value is similar idea to that of blurring, C is subtracted from the mean for fine tuning
 
 	most important parameters to vary are k and C
 
-	thresholding is the binariation of an image where pixels are either 0 or 255
+Otsu and Riddler-Calvard Thresholding:
 
-	threshold value must be specified so that all pixel intensities less than this are set to 0 and greater than this are set to 255
+		
