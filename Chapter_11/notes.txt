@@ -1,0 +1,11 @@
+Contours:
+
+	in order to find contours, you need to obtain a binarization of the image using thresholding or edge detection techniques
+
+	cv2.findContours(edged_img, type_of_contour, approximation_of_contour) - returns 3-tuple (img, contours, hierarchy) in which the contours is a python list, image you pass in will be destroyed, so make a copy of it
+
+	cv2.drawContours(img, contours_list, contour_index, RGB, thickness) - if contour_index is specified as -1, all will be drawn
+
+	cv2.boundingRect(contour) - find the enclosing box that the contour will fit into, returns tuple (x, y, w, h)
+
+	cv2.minEnclosingCircle(contour) - fits a circle around contour, returns tuple ((x, y), r)

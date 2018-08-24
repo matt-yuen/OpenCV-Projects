@@ -1,0 +1,17 @@
+Gradients:
+
+	we normally compute gradients and edges on a single channel
+
+	we can also compute gradients for each channel of RGB
+
+Laplacian method:
+
+	cv2.Laplacian(img, data_type) - data_type should be floating point to ensure all edges are caught
+
+Sobel method:
+
+	cv2.Sobel(img, data_type, x, y) - must find x and y sobels separately then combine them manually, 1 and 0 to find vertical edge-like regions, 0 and 1 to find horizontal edge-like regions
+
+Canny edge detector:
+
+	cv2.Canny(img, threshold1, threshold2) - any gradient value larger than threshold2 is considered an edge, any gradient value less than threshold1 is considered not to be an edge, values in between are classified depending on their intensities
